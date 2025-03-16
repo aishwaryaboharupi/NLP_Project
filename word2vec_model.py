@@ -171,5 +171,9 @@ loss_function = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
 
 # Convert training data into tensor format
-train_data = [(word_to_ix[context.item()], word_to_ix[target.item()]) for context, target in data]
-train_data = [(torch.tensor(c, dtype=torch.long), torch.tensor(t, dtype=torch.long)) for c, t in train_data]
+# Convert training data into tensor format correctly
+train_data = [
+    (torch.tensor(word_to_ix[list(word_to_ix.keys())[context.item()]], dtype=torch.long),
+     torch.tensor(word_to_ix[list(word_to_ix.keys())[target.item()]], dtype=torch.long)) 
+    for context, target in data
+]
