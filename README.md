@@ -14,7 +14,7 @@ INSTALLATION
   git clone https://github.com/aishwaryaboharupi/NLP_Project.git
   cd NLP_Project
 
-- Create a virtual environment (optional but recommended):
+- Create a virtual environment (optional):
   python -m venv nlp_env
   nlp_env\Scripts\activate     ( On Windows )
   
