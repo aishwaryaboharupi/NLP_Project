@@ -11,7 +11,7 @@ FEATURES
 INSTALLATION
 
 - Clone the repository:
-  git clone https://github.com/your-username/NLP_Project.git
+  git clone https://github.com/aishwaryaboharupi/NLP_Project.git
   cd NLP_Project
 
 - Create a virtual environment (optional but recommended):
